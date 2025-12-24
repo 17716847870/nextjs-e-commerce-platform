@@ -6,9 +6,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'picsum.photos',
+        hostname: 'duyi-resource.oss-cn-beijing.aliyuncs.com',
         port: '',
-        pathname: '/400/200',
+        pathname: '/**',
       },
     ]
   }

@@ -1,7 +1,14 @@
-export default async function Home() {
+import Sort from '@/components/Sort';
+import Products from '@/components/Products';
+import { productsAction } from '@/actions/product';
+
+export default async function Page() {
+  const { data } = await productsAction()
+  
   return (
-    <div>
-      hello page
+    <div className="container flex py-6">
+      <Sort />
+      <Products data={data} />
     </div>
   );
 }
